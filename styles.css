@@ -72,7 +72,7 @@ body {
 }
 /* Using Pseudo class to style */
 .nav-link:hover {
-    color: whitesmoke;
+    color: #264653;
     text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
   -webkit-background-clip: text;
      -moz-background-clip: text;
