@@ -284,6 +284,7 @@ img {
 }
 .portfolio-column {
     width: 50%;
+    min-width: 40%;
     padding: .5rem;
     margin: .5rem;
     color: var(--flare-color);
@@ -299,6 +300,9 @@ img {
     .description {
         display: none;
     }
+    .portfolio-column img{
+        display: none;
+    }
     .nav-link {
         font-size: 1rem;
     }
@@ -307,6 +311,15 @@ img {
     }
     .portfoli-stack li {
         font-size: 1rem;
+    }
+    .portfolio-stack i {
+        font-size: 2rem;
+    }
+    #last-name, #business-name{
+        display: none;
+    }
+    #email, #first-name {
+        width: 100%;
     }
 
 }
