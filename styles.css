@@ -97,6 +97,11 @@ body {
     list-style: none;
     display: inline-flex;
     padding-left: 0;
+    border: 1px solid white;
+    background-color: #264653;
+}
+.nav-item:hover {
+    background: white;
 }
 /* .nav-item {
     
@@ -104,7 +109,7 @@ body {
 .nav-link {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0vh 4vh;
     text-transform: uppercase;
 }
@@ -112,9 +117,9 @@ body {
 .nav-link:hover {
     color: #264653;
     text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
-  -webkit-background-clip: text;
-     -moz-background-clip: text;
-          background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 .profile {
 
