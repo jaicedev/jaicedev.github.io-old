@@ -221,6 +221,10 @@ img {
 }
 .portfolio-column h2 {
     color: #264653;
+    font-size: 3vh;
+}
+.description {
+    font-size: 2vh;
 }
 .portfolio-button {
     width: 45%;
@@ -242,8 +246,8 @@ img {
 }
 .portfolio-stack li {
     margin: 0;
-    padding: 0 1vh;
-    font-size: 4.5vh;
+    padding: 0 .5vh;
+    font-size: ;
     color: #264653;
 }
 .form-row {
