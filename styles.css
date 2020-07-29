@@ -38,7 +38,8 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 80vh;
+    width: 50vw;
+    max-width: 80vw;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -52,7 +53,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 125vh;
+    width: 70vw;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -64,7 +65,7 @@ body {
     border: 1px solid white;
 }
 .container-break{
-    width: 60vh;
+    width: 40vw;
 }
 .logo {
     color: #264653;
@@ -100,6 +101,8 @@ body {
     padding-left: 0;
     border: 1px solid white;
     background-color: #264653;
+    width: 50vw;
+    justify-content: center;
 }
 .nav-item:hover {
     background: white;
@@ -110,7 +113,7 @@ body {
 .nav-link {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5vw;
     padding: 0vh 4vh;
     text-transform: uppercase;
 }
@@ -122,12 +125,9 @@ body {
     -moz-background-clip: text;
     background-clip: text;
 }
-.profile {
-
-}
 .profile-img {
     border-radius: 100%;
-    width: 30vh;
+    width: 15vw;
     margin-top: 1vh;
     border: 2px solid white;
 }
