@@ -8,7 +8,7 @@ body {
     font-size: 1rem;
 }
 /* Setting Up Theming Variables */
-:root {
+:root[theme='green']{
     --base-color: #264653;
     --gradient-secondary: #2a9d8f;
     --font-color: white;
@@ -29,7 +29,7 @@ body {
     --flare-color: #6c757d;
     --logo-color: white;
 }
-:root[theme='light']{
+:root{
     --base-color: #e9ecef;
     --gradient-secondary: #f8f9fa;
     --font-color: #343a40;
@@ -265,8 +265,8 @@ footer {
     height: 3rem;
 }
 .thinkful {
-    color: rgb(29, 59, 71);
-    font-size: 1.2rem;
+    color: var(--font-color);
+    font-size: 1.3rem;
     font-weight: bold;
 }
 .contact h2, .contact h4 {
@@ -321,6 +321,9 @@ img {
     #email, #first-name {
         width: 100%;
     }
+    .hidden {
+        display: none;
+    }
 
 }
 .description {
@@ -359,12 +362,18 @@ img {
 }
 .form-row input{
     height: 3vh;
-    border-style: none;
+    border: 1px solid var(--font-color);
     text-align: center;
-    width: 20vw;
+    width: 100%;
 }
 .form-row textarea {
-    width: 40.5vw;
+    width: 100%;
     height: 8vh;
     resize: none;
+}
+.form-label {
+    color: var(--font-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }

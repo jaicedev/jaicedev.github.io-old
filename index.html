@@ -15,15 +15,15 @@
 <body>
     <!-- Using Semantic HTML to Structure Webpage -->
     <header class="container shadow">
-        <h2 class="logo logo-icon"><i class="fas fa-user-ninja"></i></h2>
+        <i class="logo logo-icon fas fa-user-ninja"></i>
         <h1 class="logo">Jaice.</h1>
         <h3 class="sub-logo">The Software Engineering Ninja</h3>
         <!-- Setting Up Theme Buttons -->
         <div class="theme-selectors">
-            <button id="green-btn" class="shadow theme-button green-theme"></button>
-            <button id="blue-btn" class="shadow theme-button blue-theme"></button>
-            <button id="light-btn" class="shadow theme-button light-theme"></button>
-            <button id="dark-btn" class="shadow theme-button dark-theme"></button>
+            <button aria-label="Light Theme Selector" title="Light Theme" id="light-btn" class="shadow theme-button light-theme"></button>
+            <button aria-label="Green Theme Selector" title="Green Theme" id="green-btn" class="shadow theme-button green-theme"></button>
+            <button aria-label="Blue Theme Selector" title="Blue Theme" id="blue-btn" class="shadow theme-button blue-theme"></button>
+            <button aria-label="Dark Theme Selector" title="Dark Theme" id="dark-btn" class="shadow theme-button dark-theme"></button>
         </div>
         <!-- Setting up Anchor Tage Navigation -->
         <nav class="nav">
@@ -49,7 +49,7 @@
         <section id = "profile" class="profile container shadow">
             <img alt="Profile Image" src="./profile-photo.jpg" class="profile-img shadow">
             <h2>Hi.<br>My name is Jaice de Celis</h2>
-            <h3><span style="color:palegreen;">return</span> ("I am a software developer from <br><span class = "thinkful inset">New Jersey</span>, I enjoy:" + things[i])</h3>
+            <h3><span class="thinkful">return</span> ("I am a software developer from <br><span class = "thinkful">New Jersey</span>, I enjoy:" + things[i])</h3>
             <ol>
                 <li style="text-align:left;">let things = [</li>
                 <li>"Writing simple and efficient code",</li>
@@ -74,7 +74,7 @@
         <section id = "about" class="about container shadow">
             <h2>About Me.</h2>
             <p>Previously a sales professional, now a software engineering ninja.</p>
-            <p>I am pursuing higher education at <span class = "thinkful inset">Thinkful</span> and I am hoping to start a lifelong career in Software.</p>
+            <p>I am pursuing higher education with <span class = "thinkful inset">Thinkful</span> and I am hoping to start a lifelong career in Software.</p>
             <p>All of my professional experience resides within the sales profession, but through technological exploration I have developed an intense passion for creating user facing applications with code.</p>
             <p>If you are on the prowl for a new developer please<br><a class="inline-link" href="#contact">Contact Me</a></p>
             <ul>
@@ -161,17 +161,17 @@
         <hr class="container-break">
         <section id = "contact" class="contact container shadow">
             <h2>Contact Me.</h2>
-            <h4>609 . 369 . 2697</h4>
             <form action="https://formspree.io/xyynlqra" method="POST" class="contact-form">
                 <div class="form-row">
+                    <label class="form-label" for="first-name">First Name:</label>
                     <input required id="first-name" name="first-name" type="text" placeholder="First Name*">
-                    <input id="last-name" name="last-name" type="text" placeholder="Last Name">
                 </div>
                 <div class="form-row">
+                    <label class="form-label" for="email">Email:</label>
                     <input required id="email" type="email" name="email" placeholder="Email Address*">
-                    <input id="business-name" name="business-name" type="text" placeholder="Business Name">
                 </div>
                 <div class="form-row">
+                    <label class="form-label" for="message">Message:</label>
                     <textarea placeholder="Hey Jaice..." name="message" id="message"></textarea>
                 </div>
                 <div class="form-row">
@@ -181,10 +181,10 @@
             <!-- Using Font Awesome for Icons -->
             <ul>
                 <li><a target="_blank" href="https://www.linkedin.com/in/jaicedecelis/"><i class="fab fa-linkedin"></i></a></li>
-                <li> <a target="_blank" href="https://github.com/jaicedev"><i class="fab fa-github"></i></a></li>
-                <li> <a target="_blank" href="https://stackoverflow.com/users/13916437/jaice-de-celis"><i class="fab fa-stack-overflow"></i></a></li>
-                <li> <a target="_blank" href="https://www.quora.com/profile/Jaice-de-Celis-3"><i class="fab fa-quora"></i></a></li>
-                <li> <a target="_blank" href="mailto:jaicedev@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                <li><a target="_blank" href="https://github.com/jaicedev"><i class="fab fa-github"></i></a></li>
+                <li><a target="_blank" href="https://stackoverflow.com/users/13916437/jaice-de-celis"><i class="fab fa-stack-overflow"></i></a></li>
+                <li><a target="_blank" href="https://www.quora.com/profile/Jaice-de-Celis-3"><i class="fab fa-quora"></i></a></li>
+                <li><a target="_blank" href="mailto:jaicedev@gmail.com"><i class="fas fa-envelope"></i></a></li>
             </ul>
         </section>
     </main>
