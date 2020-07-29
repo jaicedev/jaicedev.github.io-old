@@ -132,6 +132,7 @@ body {
     border-radius: 100%;
     border: 2px solid var(--font-color);
     border-style: inset;
+    margin: 0 1rem;
 }
 .theme-button:hover {
     cursor: pointer;
