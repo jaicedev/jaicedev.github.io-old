@@ -61,6 +61,7 @@ body {
     margin-top: 2vh;
     margin-bottom: 2vh;
     padding: 1vh;
+    border: 1px solid white;
 }
 .container-break{
     width: 60vh;
@@ -244,4 +245,19 @@ img {
     padding: 0 1vh;
     font-size: 4.5vh;
     color: #264653;
+}
+.form-row {
+    margin: 1vh 0vh;
+    width: 100%;
+}
+.form-row input{
+    height: 3vh;
+    border-style: none;
+    text-align: center;
+    width: 20vh;
+}
+.form-row textarea {
+    width: 50vh;
+    height: 8vh;
+    resize: none;
 }
