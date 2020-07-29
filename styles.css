@@ -1,0 +1,122 @@
+/* Zeroing the page */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* Setting up smoothe box-shadow for use globally */
+.shadow {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
+                0 2px 2px rgba(0,0,0,0.08), 
+                0 4px 4px rgba(0,0,0,0.08), 
+                0 8px 8px rgba(0,0,0,0.08),
+                0 12px 12px rgba(0,0,0,0.08);
+}
+/* Defining Global Container CSS */
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background: rgb(247, 247, 247);
+    padding: 0vh 10vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 1px solid white;
+}
+.container-break{
+    width: 60vh;
+}
+.logo {
+    color: lightslategray;
+    font-size: 10vh;
+    text-align: center;
+    margin-bottom: 0;
+}
+.sub-logo {
+    text-align: center;
+    color: gray;
+    margin-top: 0;
+    font-style: italic;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 0;
+}
+/* .nav-item {
+    
+} */
+.nav-link {
+    color: lightslategray;
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 0vh 4vh;
+}
+/* Using Pseudo class to style */
+.nav-link:hover {
+    color: rgb(157, 180, 202);
+    text-shadow: 1px 0px 1px 1px gray;
+}
+.profile {
+
+}
+.profile-img {
+    border-radius: 100%;
+    width: 50%;
+    margin-top: 1vh;
+    border: 2px solid white;
+}
+.profile ol {
+    list-style: none;
+    padding-left: 0;
+}
+.profile ol li {
+    font-weight: bold;
+    color: lightslategray;
+    font-size: 1rem;
+}
+.about {
+
+}
+/* Grouping CSS */
+.about h2, .contact h2 {
+    color: lightslategray;
+    font-style: italic;
+    
+}
+.inline-link {
+    text-decoration: none;
+    color: lightslategray;
+}
+.inline-link:hover {
+    text-shadow: 1px 0px 1px 1px gray;
+    color: rgb(157, 180, 202);
+}
+.contact ul {
+    padding-left: 0;
+}
+.contact li {
+    list-style: none;
+    display: inline-flex;
+    margin: 0 1vh;
+}
+.contact li a {
+    color: lightslategray;
+    font-size: 2rem;
+}
+.footer-text {
+    color: gray;
+}
+footer {
+    height: 5vh;
+}

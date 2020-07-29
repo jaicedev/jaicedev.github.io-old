@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!-- Importing Lato Font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Importing FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Jaice de Celis</title>
+</head>
+<body>
+    <!-- Using Semantic HTML to Structure Webpage -->
+    <header class="container shadow">
+        <h1 class="logo">Jaice.</h1>
+        <h3 class="sub-logo">Full Stack Software Engineer</h3>
+        <!-- Setting up Anchor Tage Navigation -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#profile" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Using HR to break up Content -->
+    <hr class="container-break">
+    <main>
+        <section id = "profile" class="profile container shadow">
+            <img src="./profile-photo.jpg" class="profile-img shadow">
+            <h2>Hi. My name is Jaice de Celis</h2>
+            <h3><span style="color:purple;">return</span> ("I am a software developer, I enjoy:" + things)</h3>
+            <ol>
+                <li style="float:left;">let things = [</li>
+                <br>
+                <li>"Writing simple and efficent code",</li>
+                <li>"Solving complex issues",<li>
+                <li>"Collaboarting with like minded people",</li>
+                <li>"Making dreams into reality"</li>
+                <li style = "float:left;">]</li>
+            </ol>
+        </section>
+        <hr class="container-break">
+        <section id = "about" class="about container shadow">
+            <h2>About Me.</h2>
+            <p>Previously a sales professional, now a software engineering ninja.</p>
+            <p>I am currently pursuing higher education at Thinkful and I am hoping to start my career in Software.</p>
+            <p>All of my professional experience resides within the sales profession, but through technological exploration I have developed an intense passion for creating user facing applications with code.</p>
+            <p>If you are on the prowl for a new developer please <a class="inline-link" href="#contact">Contact Me</a></p>
+        </section>
+        <hr class="container-break">
+        <section id = "contact" class="contact container shadow">
+            <h2>Contact Me.</h2>
+            <h4>609 . 369 . 2697</h4>
+            <h4>JaiceDev@Gmail.com</h4>
+            <p>You can find me on these platforms:</p>
+            <!-- Using Font Awesome for Icons -->
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jaicedecelis/"><i class="fab fa-linkedin"></i></a></li>
+                <li> <a href="github.com/jaicedev"><i class="fab fa-github"></i></a></li>
+                <li> <a href="https://stackoverflow.com/users/13916437/jaice-de-celis"><i class="fab fa-stack-overflow"></i></a></li>
+                <li> <a href="https://www.quora.com/profile/Jaice-de-Celis-3"><i class="fab fa-quora"></i></a></li>
+                <li> <a href="mailto:jaicedev@gmail.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </section>
+    </main>
+    <hr class="container-break">
+    <footer class="container shadow">
+        <p class="footer-text"><i class="fas fa-copyright"></i> Jaice de Celis 2020</p>
+    </footer>
+</body>
+</html>
