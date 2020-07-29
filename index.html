@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html theme="" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <!-- Importing FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
     <title>Jaice de Celis</title>
 </head>
 <body>
@@ -17,6 +18,14 @@
         <h1 class="logo logo-icon"><i class="fas fa-user-ninja"></i></h1>
         <h1 class="logo">Jaice.</h1>
         <h3 class="sub-logo">The Software Engineering Ninja</h3>
+        <!-- Setting Up Theme Buttons -->
+        <div class="theme-selectors">
+            <p>Select Your Theme:</p>
+            <button id="green-btn" class="shadow theme-button green-theme"></button>
+            <button id="blue-btn" class="shadow theme-button blue-theme"></button>
+            <button id="light-btn" class="shadow theme-button light-theme"></button>
+            <button id="dark-btn" class="shadow theme-button dark-theme"></button>
+        </div>
         <!-- Setting up Anchor Tage Navigation -->
         <nav class="nav">
             <ul class="nav-list">

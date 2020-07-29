@@ -4,16 +4,42 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    color: white;
+    color: var(--font-color);
     font-size: 1rem;
 }
 /* Setting Up Theming Variables */
 :root {
-    
+    --base-color: #264653;
+    --gradient-secondary: #2a9d8f;
+    --font-color: white;
+    --flare-color: #343a40;
+    --logo-color: white;
 }
+:root[theme='blue']{
+    --base-color: #1d3557;
+    --gradient-secondary: #457b9d;
+    --font-color: white;
+    --flare-color: #343a40;
+    --logo-color: white;
+}
+:root[theme='dark']{
+    --base-color: #343a40;
+    --gradient-secondary: #6c757d;
+    --font-color: white;
+    --flare-color: #6c757d;
+    --logo-color: white;
+}
+:root[theme='light']{
+    --base-color: #e9ecef;
+    --gradient-secondary: #f8f9fa;
+    --font-color: #343a40;
+    --flare-color: #343a40;
+    --logo-color: #343a40;
+}
+
 /* Using Keyframing to Set up Animated BG, Sourced */
 body {
-    background: linear-gradient(-45deg, #264653, #2a9d8f, #264653, #264653);
+    background: linear-gradient(-45deg, var(--base-color), var(--gradient-secondary), var(--base-color), var(--base-color));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -47,11 +73,11 @@ body {
     margin: auto;
     justify-content: center;
     align-items: center;
-    background: #2a9d8f;
+    background: var(--gradient-secondary);
     padding: 0 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid white;
+    border: 1px solid var(--font-color);
 }
 .portfolio-container {
     text-align: center;
@@ -62,17 +88,17 @@ body {
     margin: auto;
     justify-content: center;
     align-items: center;
-    background: #2a9d8f;
+    background: var(--gradient-secondary);
     padding: 0 2vh 0 2vh;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    border: 1px solid white;
+    border: 1px solid var(--font-color);
 }
 .container-break{
     width: 40vw;
 }
 .logo {
-    color: #264653;
+    color: var(--logo-color);
     font-size: 6rem;
     margin-top: 0;
     text-align: center;
@@ -96,9 +122,33 @@ body {
 }
 .sub-logo {
     text-align: center;
-    color: white;
+    color: var(--font-color);
     margin-top: 0;
     font-style: italic;
+}
+.theme-button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: 2px solid var(--font-color);
+    border-style: inset;
+}
+.theme-button:hover {
+    cursor: pointer;
+    border: 3px solid var(--font-color);
+    border-style: inset;
+}
+.dark-theme {
+    background-color: rgb(54, 54, 54);
+}
+.green-theme {
+    background-color: #264653;
+}
+.blue-theme {
+    background-color: #457b9d;
+}
+.light-theme {
+    background-color: white;
 }
 .nav {
     display: flex;
@@ -110,7 +160,7 @@ body {
     display: inline-flex;
     padding-left: 0;
     border: 1px solid white;
-    background-color: #264653;
+    background-color: var(--base-color);
     width: 100%;
     justify-content: center;
 }
@@ -121,7 +171,7 @@ body {
     
 } */
 .nav-link {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 2rem;
     padding: 0 10px;
@@ -129,7 +179,7 @@ body {
 }
 /* Using Pseudo class to style */
 .nav-link:hover {
-    color: #264653;
+    color: var(--base-color);
     text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -146,9 +196,12 @@ body {
     list-style: none;
     padding-left: 0;
 }
+.profile h3 {
+    font-size: 1.3rem;
+}
 .profile ol li {
     font-weight: bold;
-    color: white;
+    color: var(--font-color);
     font-size: 1.3rem;
 }
 .services ul{
@@ -168,7 +221,7 @@ body {
     font-size: 3rem;
 }
 .about ul li i{
-    color: #264653;
+    color: var(--logo-color);
     padding: 0 2vw;
 }
 .about p {
@@ -177,23 +230,22 @@ body {
 }
 /* Grouping CSS */
 .about h2, .contact h2 {
-    color: white;
+    color: var(--font-color);
     font-style: italic;
-    
 }
 .inline-link {
     text-decoration: underline;
-    color: white;
+    color: var(--font-color);
 }
 .inline-link:hover {
     text-shadow: 1px 0px 1px 1px gray;
-    color: #264653;
+    color: var(--base-color);
 }
 .contact ul {
     padding-left: 0;
 }
 .contact ul li a:hover{
-    color: #264653
+    color: var(--base-color);
 }
 .contact li {
     list-style: none;
@@ -201,11 +253,11 @@ body {
     margin: 0 1vw;
 }
 .contact li a {
-    color: white;
+    color: var(--font-color);
     font-size: 1.4rem;
 }
 .footer-text {
-    color: #264653;
+    color: var(--flare-color);
     font-size: .75rem;
 }
 footer {
@@ -233,13 +285,13 @@ img {
     width: 50%;
     padding: .5rem;
     margin: .5rem;
-    color: darkgray;
+    color: var(--flare-color);
     border: 1px solid white;
     background-color: whitesmoke;
     flex-direction: column;
 }
 .portfolio-column h2 {
-    color: #264653;
+    color: var(--flare-color);
     font-size: 2rem;
 }
 @media screen and (max-width:670px){
@@ -271,7 +323,7 @@ img {
 }
 .portfolio-button:hover {
     color:white;
-    background-color: #264653;
+    background-color: var(--base-color);
 }
 .portfolio-stack {
     display:inline-flex;
@@ -285,7 +337,7 @@ img {
     margin: 0;
     padding: 0 .5vw;
     font-size: 3rem;
-    color: #264653;
+    color: var(--flare-color);
 }
 .form-row {
     margin: 1vh 0vh;
