@@ -377,3 +377,6 @@ img {
     display: flex;
     flex-direction: column;
 }
+.contact-form {
+    width: 75%;
+}
