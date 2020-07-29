@@ -4,6 +4,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
+    background: #264653;
+    color: white;
 }
 /* Setting up smoothe box-shadow for use globally */
 .shadow {
@@ -22,7 +24,7 @@ body {
     margin: auto;
     justify-content: center;
     align-items: center;
-    background: rgb(247, 247, 247);
+    background: #2a9d8f;
     padding: 0vh 10vh;
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -32,14 +34,19 @@ body {
     width: 60vh;
 }
 .logo {
-    color: lightslategray;
+    color: #264653;
     font-size: 10vh;
     text-align: center;
     margin-bottom: 0;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+
 }
 .sub-logo {
     text-align: center;
-    color: gray;
+    color: white;
     margin-top: 0;
     font-style: italic;
 }
@@ -57,15 +64,19 @@ body {
     
 } */
 .nav-link {
-    color: lightslategray;
+    color: white;
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     padding: 0vh 4vh;
+    text-transform: uppercase;
 }
 /* Using Pseudo class to style */
 .nav-link:hover {
-    color: rgb(157, 180, 202);
-    text-shadow: 1px 0px 1px 1px gray;
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
 }
 .profile {
 
@@ -82,7 +93,7 @@ body {
 }
 .profile ol li {
     font-weight: bold;
-    color: lightslategray;
+    color: white;
     font-size: 1rem;
 }
 .about {
@@ -90,13 +101,13 @@ body {
 }
 /* Grouping CSS */
 .about h2, .contact h2 {
-    color: lightslategray;
+    color: white;
     font-style: italic;
     
 }
 .inline-link {
-    text-decoration: none;
-    color: lightslategray;
+    text-decoration: underline;
+    color: white;
 }
 .inline-link:hover {
     text-shadow: 1px 0px 1px 1px gray;
@@ -105,18 +116,22 @@ body {
 .contact ul {
     padding-left: 0;
 }
+.contact ul li a:hover{
+    color: #264653
+}
 .contact li {
     list-style: none;
     display: inline-flex;
     margin: 0 1vh;
 }
 .contact li a {
-    color: lightslategray;
+    color: white;
     font-size: 2rem;
 }
 .footer-text {
-    color: gray;
+    color: white;
 }
 footer {
     height: 5vh;
 }
+/* Title Bar Copied From External Source */
