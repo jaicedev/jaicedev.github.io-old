@@ -202,8 +202,9 @@ footer {
     height: 3rem;
 }
 .thinkful {
-    color: #264653;
+    color: rgb(29, 59, 71);
     font-size: 1.2rem;
+    font-weight: bold;
 }
 .contact h2, .contact h4 {
     padding: 0;
@@ -219,7 +220,7 @@ img {
     width: 100%;
 }
 .portfolio-column {
-    width: 30%;
+    width: 50%;
     padding: .5rem;
     margin: .5rem;
     color: darkgray;
@@ -229,7 +230,7 @@ img {
 }
 .portfolio-column h2 {
     color: #264653;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 @media screen and (max-width:670px){
     .description {
@@ -241,13 +242,13 @@ img {
     .portfolio-column h2 {
         font-size: 1rem;
     }
-    .portfolio-column img {
-        display: none;
+    .portfoli-stack li {
+        font-size: 1rem;
     }
 
 }
 .description {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .portfolio-button {
     width: 100%;
@@ -256,7 +257,7 @@ img {
     border: 1px solid black;
     border-style: inset;
     width: 4rem;
-    height: 4vh;
+    height: 2rem;
 }
 .portfolio-button:hover {
     color:white;
@@ -273,7 +274,7 @@ img {
 .portfolio-stack li {
     margin: 0;
     padding: 0 .5vw;
-    font-size: 1.4rem;
+    font-size: 3rem;
     color: #264653;
 }
 .form-row {
