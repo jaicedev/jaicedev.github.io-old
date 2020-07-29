@@ -190,11 +190,15 @@
             <h4>609 . 369 . 2697</h4>
             <form action="https://formspree.io/xyynlqra" class="contact-form">
                 <div class="form-row">
-                    <input name="name" type="text" placeholder="First Name">
-                    <input id="email" type="email" name="email" placeholder="Email Address">
+                    <input required name="first-name" type="text" placeholder="First Name*">
+                    <input name="last-name" type="text" placeholder="Last Name">
                 </div>
                 <div class="form-row">
-                    <textarea placeholder="Hey Jaice..." required name="message" id="message"></textarea>
+                    <input required id="email" type="email" name="email" placeholder="Email Address*">
+                    <input name="business-name" type="text" placeholder="Business Name">
+                </div>
+                <div class="form-row">
+                    <textarea placeholder="Hey Jaice..." name="message" id="message"></textarea>
                 </div>
                 <div class="form-row">
                     <button type="submit" class="portfolio-button">Submit</button>
