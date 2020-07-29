@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <!-- Importing FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Jaice de Celis</title>
 </head>
 <body>
@@ -19,13 +20,13 @@
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="#profile" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
                 </li>
             </ul>
         </nav>
@@ -35,8 +36,8 @@
     <main>
         <section id = "profile" class="profile container shadow">
             <img src="./profile-photo.jpg" class="profile-img shadow">
-            <h2>Hi. My name is Jaice de Celis</h2>
-            <h3><span style="color:palegreen;">return</span> ("I am a software developer, I enjoy:" + things)</h3>
+            <h2>Hi.<br>My name is Jaice de Celis</h2>
+            <h3><span style="color:palegreen;">return</span> ("I am a software developer from <br><span class = "thinkful inset">New Jersey</span>, I enjoy:" + things[i])</h3>
             <ol>
                 <li style="float:left;">let things = [</li>
                 <br>
@@ -48,19 +49,143 @@
             </ol>
         </section>
         <hr class="container-break">
+        <section id = "services" class="services container shadow">
+            <h2>Services.</h2>
+            <ul>
+                <li>Responsive Design and Development</li>
+                <li>High Performance Code</li>
+                <li>Search Engine Optimization</li>
+                <li>HTML Email Design</li>
+            </ul>
+        </section>
+        <hr class="container-break">
         <section id = "about" class="about container shadow">
             <h2>About Me.</h2>
             <p>Previously a sales professional, now a software engineering ninja.</p>
-            <p>I am currently pursuing higher education at Thinkful and I am hoping to start my career in Software.</p>
+            <p>I am pursuing higher education at <span class = "thinkful inset">Thinkful</span> and I am hoping to start a lifelong career in Software.</p>
             <p>All of my professional experience resides within the sales profession, but through technological exploration I have developed an intense passion for creating user facing applications with code.</p>
-            <p>If you are on the prowl for a new developer please <a class="inline-link" href="#contact">Contact Me</a></p>
+            <p>If you are on the prowl for a new developer please<br><a class="inline-link" href="#contact">Contact Me</a></p>
+            <ul>
+                <li class="inset"><i class="fab fa-html5"></i></li>
+                <li class="inset"><i class="fab fa-css3-alt"></i></li>
+                <li class="inset"><i class="fab fa-python"></i></li>
+                <li class="inset"><i class="fab fa-js"></i></li>
+            </ul>
+        </section>
+        <hr class="container-break">
+        <section id="portfolio" class="portfolio-container shadow">
+            <h2>My Projects.</h2>
+            <div class="portfolio-row">
+                <div class="portfolio-column shadow">
+                    <img src="https://via.placeholder.com/480x270.png">
+                    <h2>Wheels CRM</h2>
+                    <ul class="portfolio-stack">
+                        <li>
+                            <i class="fab fa-html5"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-css3-alt"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-vuejs"></i>
+                        </li>
+                    </ul>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur sequi, quo quod dicta quis. Maiores autem, mollitia odio eos corporis </p>
+                    <button class="portfolio-button shadow">DEMO</button>
+                    <button class="portfolio-button shadow">CODE</button>
+                </div>
+                <div class="portfolio-column shadow">
+                    <img src="https://via.placeholder.com/480x270.png">
+                    <h2>Easy Journal</h2>
+                    <ul class="portfolio-stack">
+                        <li>
+                            <i class="fab fa-html5"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-css3-alt"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-angular"></i>
+                        </li>
+                    </ul>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur sequi, quo quod dicta quis. Maiores autem, mollitia odio eos corporis </p>
+                    <button class="portfolio-button shadow">DEMO</button>
+                    <button class="portfolio-button shadow">CODE</button>
+                </div>
+                <div class="portfolio-column shadow">
+                    <img src="https://via.placeholder.com/480x270.png">
+                    <h2>Coming Soon</h2>
+                    <ul class="portfolio-stack">
+                        <li>
+                            <i class="fab fa-redux"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-react"></i>
+                        </li>
+                    </ul>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur sequi, quo quod dicta quis. Maiores autem, mollitia odio eos corporis </p>
+                    <button class="portfolio-button shadow">DEMO</button>
+                    <button class="portfolio-button shadow">CODE</button>
+                </div>
+            </div>
+            <div class="portfolio-row">
+                <div class="portfolio-column shadow">
+                    <img src="https://via.placeholder.com/480x270.png">
+                    <h2>Wheels CRM</h2>
+                    <ul class="portfolio-stack">
+                        <li>
+                            <i class="fab fa-html5"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-css3-alt"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-node"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-js"></i>
+                        </li>
+                    </ul>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur sequi, quo quod dicta quis. Maiores autem, mollitia odio eos corporis </p>
+                    <button class="portfolio-button shadow">DEMO</button>
+                    <button class="portfolio-button shadow">CODE</button>
+                </div>
+                <div class="portfolio-column shadow">
+                    <img src="https://via.placeholder.com/480x270.png">
+                    <h2>Easy Journal</h2>
+                    <ul class="portfolio-stack">
+                        <li>
+                            <i class="fab fa-python"></i>
+                        </li>
+                    </ul>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur sequi, quo quod dicta quis. Maiores autem, mollitia odio eos corporis </p>
+                    <button class="portfolio-button shadow">DEMO</button>
+                    <button class="portfolio-button shadow">CODE</button>
+                </div>
+                <div class="portfolio-column shadow">
+                    <img src="https://via.placeholder.com/480x270.png">
+                    <h2>Coming Soon</h2>
+                    <ul class="portfolio-stack">
+                        <li>
+                            <i class="fab fa-html5"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-css3-alt"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-python"></i>
+                        </li>
+                    </ul>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur sequi, quo quod dicta quis. Maiores autem, mollitia odio eos corporis </p>
+                    <button class="portfolio-button shadow">DEMO</button>
+                    <button class="portfolio-button shadow">CODE</button>
+                </div>
+            </div>
         </section>
         <hr class="container-break">
         <section id = "contact" class="contact container shadow">
             <h2>Contact Me.</h2>
             <h4>609 . 369 . 2697</h4>
-            <h4>JaiceDev@Gmail.com</h4>
-            <p>You can find me on these platforms:</p>
             <!-- Using Font Awesome for Icons -->
             <ul>
                 <li><a href="https://www.linkedin.com/in/jaicedecelis/"><i class="fab fa-linkedin"></i></a></li>
