@@ -326,6 +326,11 @@ img {
     }
 
 }
+@media screen and (max-width:530px){
+    .hideskill {
+        display: none;
+    }
+}
 .description {
     font-size: 1.5rem;
 }
@@ -379,4 +384,9 @@ img {
 }
 .contact-form {
     width: 75%;
+}
+.skillset {
+    padding-left: 0;
+    columns: 2;
+    display: inline-block;
 }
