@@ -169,7 +169,7 @@ body {
   justify-content: center;
 }
 .nav-item:hover {
-  background: white;
+  background: var(--font-color);
 }
 /* .nav-item {
     
@@ -243,8 +243,7 @@ body {
   color: var(--font-color);
 }
 .inline-link:hover {
-  text-shadow: 1px 0px 1px 1px gray;
-  color: var(--base-color);
+  text-shadow: 1px 0px 1px 1px black;
 }
 .contact ul {
   padding-left: 0;
@@ -284,9 +283,6 @@ footer {
 .portfolio-row {
   display: inline-flex;
 }
-img {
-  width: 100%;
-}
 .portfolio-column {
   width: 50%;
   min-width: 40%;
@@ -302,7 +298,7 @@ img {
   font-size: 2rem;
 }
 .portfolio-column img {
-  height: 50%;
+  width: 100%;
 }
 
 @media screen and (max-width: 670px) {
@@ -399,4 +395,9 @@ img {
   padding-left: 0;
   columns: 2;
   display: inline-block;
+  margin-top: 0;
+}
+.stack-text {
+  font-weight: bold;
+  font-style: italic;
 }
