@@ -7,6 +7,7 @@ body {
   color: var(--font-color);
   font-size: 1rem;
 }
+
 /* Setting Up Theming Variables */
 :root[theme="green"] {
   --base-color: #264653;
@@ -15,6 +16,7 @@ body {
   --flare-color: #343a40;
   --logo-color: white;
 }
+
 :root[theme="blue"] {
   --base-color: #1d3557;
   --gradient-secondary: #457b9d;
@@ -22,6 +24,7 @@ body {
   --flare-color: #343a40;
   --logo-color: white;
 }
+
 :root[theme="dark"] {
   --base-color: #343a40;
   --gradient-secondary: #6c757d;
@@ -29,6 +32,7 @@ body {
   --flare-color: #6c757d;
   --logo-color: white;
 }
+
 :root {
   --base-color: #e9ecef;
   --gradient-secondary: #f8f9fa;
@@ -39,13 +43,11 @@ body {
 
 /* Using Keyframing to Set up Animated BG, Sourced */
 body {
-  background: linear-gradient(
-    -45deg,
-    var(--base-color),
-    var(--gradient-secondary),
-    var(--base-color),
-    var(--base-color)
-  );
+  background: linear-gradient(-45deg,
+      var(--base-color),
+      var(--gradient-secondary),
+      var(--base-color),
+      var(--base-color));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -54,19 +56,23 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 /* Setting up smoothe box-shadow for use globally */
 .shadow {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.08),
     0 4px 4px rgba(0, 0, 0, 0.08), 0 8px 8px rgba(0, 0, 0, 0.08),
     0 12px 12px rgba(0, 0, 0, 0.08);
 }
+
 /* Defining Global Container CSS using Flexbox*/
 .container {
   text-align: center;
@@ -83,12 +89,13 @@ body {
   margin-bottom: 1rem;
   border: 1px solid var(--font-color);
 }
+
 .portfolio-container {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 75vw;
-  max-width: 75vw;
+  width: 75%;
+  max-width: 75%;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -98,9 +105,11 @@ body {
   margin-bottom: 2vh;
   border: 1px solid var(--font-color);
 }
+
 .container-break {
   width: 40vw;
 }
+
 .logo {
   color: var(--logo-color);
   font-size: 6rem;
@@ -112,23 +121,27 @@ body {
   -moz-background-clip: text;
   background-clip: text;
 }
+
 .logo-icon {
   font-size: 3rem;
   margin-top: 1rem;
   padding-bottom: 0;
 }
+
 .inset {
   text-shadow: 2px 2px 3px rgba(216, 216, 216, 0.5);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
 }
+
 .sub-logo {
   text-align: center;
   color: var(--font-color);
   margin-top: 0;
   font-style: italic;
 }
+
 .theme-button {
   width: 2rem;
   height: 2rem;
@@ -137,28 +150,35 @@ body {
   border-style: inset;
   margin: 0 1rem;
 }
+
 .theme-button:hover {
   cursor: pointer;
   border: 3px solid var(--font-color);
   border-style: inset;
 }
+
 .dark-theme {
   background-color: rgb(54, 54, 54);
 }
+
 .green-theme {
   background-color: #264653;
 }
+
 .blue-theme {
   background-color: #457b9d;
 }
+
 .light-theme {
   background-color: white;
 }
+
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .nav-list {
   list-style: none;
   display: inline-flex;
@@ -168,9 +188,11 @@ body {
   width: 100%;
   justify-content: center;
 }
+
 .nav-item:hover {
   background: var(--font-color);
 }
+
 /* .nav-item {
     
 } */
@@ -181,6 +203,7 @@ body {
   padding: 0 10px;
   text-transform: lowercase;
 }
+
 /* Using Pseudo class to style */
 .nav-link:hover {
   color: var(--base-color);
@@ -189,6 +212,7 @@ body {
   -moz-background-clip: text;
   background-clip: text;
 }
+
 .profile-img {
   border-radius: 100%;
   width: 17rem;
@@ -196,93 +220,116 @@ body {
   margin-top: 1vh;
   border: 2px solid white;
 }
+
 .profile ol {
   list-style: none;
   padding-left: 0;
 }
+
 .profile h3 {
   font-size: 1.3rem;
 }
+
 .profile ol li {
   font-weight: bold;
   color: var(--font-color);
   font-size: 1.3rem;
 }
+
 .services ul {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
   font-size: 1.3rem;
 }
+
 .services h2 {
   margin-bottom: 0;
   font-style: italic;
 }
+
 .about ul {
   list-style: none;
   padding-left: 0;
   display: inline-flex;
   font-size: 3rem;
 }
+
 .about ul li i {
   color: var(--logo-color);
   padding: 0 2vw;
 }
+
 .about p {
   font-size: 1.3rem;
   width: 100%;
 }
+
 /* Grouping CSS */
 .about h2,
 .contact h2 {
   color: var(--font-color);
   font-style: italic;
 }
+
 .inline-link {
   text-decoration: underline;
   color: var(--font-color);
 }
+
 .inline-link:hover {
   text-shadow: 1px 0px 1px 1px black;
 }
+
 .contact ul {
   padding-left: 0;
 }
+
 .contact ul li a:hover {
   color: var(--base-color);
 }
+
 .contact li {
   list-style: none;
   display: inline-flex;
   margin: 0 1vw;
 }
+
 .contact li a {
   color: var(--font-color);
   font-size: 1.4rem;
 }
+
 .footer-text {
   color: var(--flare-color);
   font-size: 0.75rem;
 }
+
 footer {
   height: 3rem;
 }
+
 .thinkful {
   color: var(--font-color);
   font-size: 1.3rem;
   font-weight: bold;
 }
+
 .contact h2,
 .contact h4 {
   padding: 0;
   margin: 1rem 0 0 0;
 }
+
 .portfolio h2 {
   font-style: italic;
 }
+
 .portfolio-row {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
 }
+
 .portfolio-column {
   width: 50%;
   min-width: 40%;
@@ -293,10 +340,38 @@ footer {
   background-color: whitesmoke;
   flex-direction: column;
 }
+
+@media screen and (max-width: 1000px) {
+
+  .portfolio-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portfolio-column {
+    width: 90%;
+  }
+
+}
+
+.third-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
+  .third-project {
+    width: 100%;
+  }
+}
+
 .portfolio-column h2 {
   color: var(--flare-color);
   font-size: 2rem;
 }
+
 .portfolio-column img {
   width: 100%;
 }
@@ -305,41 +380,48 @@ footer {
   .description {
     display: none;
   }
-  .portfolio-column img {
-    display: none;
-  }
+
   .nav-link {
     font-size: 1rem;
   }
+
   .portfolio-column h2 {
     font-size: 1rem;
   }
+
   .portfoli-stack li {
     font-size: 1rem;
   }
+
   .portfolio-stack i {
     font-size: 2rem;
   }
+
   #last-name,
   #business-name {
     display: none;
   }
+
   #email,
   #first-name {
     width: 100%;
   }
+
   .hidden {
     display: none;
   }
 }
+
 @media screen and (max-width: 530px) {
   .hideskill {
     display: none;
   }
 }
+
 .description {
   font-size: 1.5rem;
 }
+
 .portfolio-button {
   width: 100%;
   background-color: white;
@@ -349,10 +431,12 @@ footer {
   width: 4rem;
   height: 2rem;
 }
+
 .portfolio-button:hover {
   color: white;
   background-color: var(--base-color);
 }
+
 .portfolio-stack {
   display: inline-flex;
   width: 100%;
@@ -361,42 +445,50 @@ footer {
   padding: 0;
   margin: 0;
 }
+
 .portfolio-stack li {
   margin: 0;
   padding: 0 0.5vw;
   font-size: 3rem;
   color: var(--flare-color);
 }
+
 .form-row {
   margin: 1vh 0vh;
   width: 100%;
 }
+
 .form-row input {
   height: 3vh;
   border: 1px solid var(--font-color);
   text-align: center;
   width: 100%;
 }
+
 .form-row textarea {
   width: 100%;
   height: 8vh;
   resize: none;
 }
+
 .form-label {
   color: var(--font-color);
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .contact-form {
   width: 75%;
 }
+
 .skillset {
   padding-left: 0;
   columns: 2;
   display: inline-block;
   margin-top: 0;
 }
+
 .stack-text {
   font-weight: bold;
   font-style: italic;
