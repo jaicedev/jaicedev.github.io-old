@@ -1,371 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <!-- Importing Lato Font from Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Importing FontAwesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <script defer src="app.js"></script>
-    <title>Jaice de Celis</title>
-  </head>
-  <body>
-    <!-- Using Semantic HTML to Structure Webpage -->
-    <header class="container shadow">
-      <i class="logo logo-icon fas fa-user-ninja"></i>
-      <h1 class="logo">Jaice.</h1>
-      <h2 class="sub-logo">The Software Engineering Ninja</h2>
-      <!-- Setting Up Theme Buttons -->
-      <div class="theme-selectors">
-        <button
-          aria-label="Light Theme Selector"
-          title="Light Theme"
-          id="light-btn"
-          class="shadow theme-button light-theme"
-        ></button>
-        <button
-          aria-label="Green Theme Selector"
-          title="Green Theme"
-          id="green-btn"
-          class="shadow theme-button green-theme"
-        ></button>
-        <button
-          aria-label="Blue Theme Selector"
-          title="Blue Theme"
-          id="blue-btn"
-          class="shadow theme-button blue-theme"
-        ></button>
-        <button
-          aria-label="Dark Theme Selector"
-          title="Dark Theme"
-          id="dark-btn"
-          class="shadow theme-button dark-theme"
-        ></button>
-      </div>
-      <!-- Setting up Anchor Tage Navigation -->
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#services" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Using HR to break up Content -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <!-- Importing Lato Font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <!-- Importing FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon.ico" />
+  <script defer src="app.js"></script>
+  <title>Jaice de Celis</title>
+</head>
+
+<body>
+  <!-- Using Semantic HTML to Structure Webpage -->
+  <header class="container shadow">
+    <i class="logo logo-icon fas fa-user-ninja"></i>
+    <h1 class="logo">Jaice.</h1>
+    <h2 class="sub-logo">The Software Engineering Ninja</h2>
+    <!-- Setting Up Theme Buttons -->
+    <div class="theme-selectors">
+      <button aria-label="Light Theme Selector" title="Light Theme" id="light-btn"
+        class="shadow theme-button light-theme"></button>
+      <button aria-label="Green Theme Selector" title="Green Theme" id="green-btn"
+        class="shadow theme-button green-theme"></button>
+      <button aria-label="Blue Theme Selector" title="Blue Theme" id="blue-btn"
+        class="shadow theme-button blue-theme"></button>
+      <button aria-label="Dark Theme Selector" title="Dark Theme" id="dark-btn"
+        class="shadow theme-button dark-theme"></button>
+    </div>
+    <!-- Setting up Anchor Tage Navigation -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#services" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Using HR to break up Content -->
+  <hr class="container-break" />
+  <main>
+    <section id="profile" class="profile container shadow">
+      <img alt="Picture of My Daughter and I" src="./profile-photo.jpg" class="profile-img shadow" />
+      <h2>Hi.<br />My name is Jaice de Celis</h2>
+      <ol>
+        <li style="text-align: left">let things = [</li>
+        <li>"Writing simple and efficient code",</li>
+        <li>"Solving complex issues",</li>
+        <li></li>
+        <li>"Collaborating with like-minded people",</li>
+        <li>"Mixed Martial Arts"</li>
+        <li>"And"</li>
+        <li>"Making dreams into reality."</li>
+        <li style="text-align: left">];</li>
+      </ol>
+      <h3>
+        <span class="thinkful">return</span> ("I am a software developer from
+        <br /><span class="thinkful">New Jersey</span>, I enjoy:" +
+        things.join(', '))
+      </h3>
+    </section>
     <hr class="container-break" />
-    <main>
-      <section id="profile" class="profile container shadow">
-        <img
-          alt="Picture of My Daughter and I"
-          src="./profile-photo.jpg"
-          class="profile-img shadow"
-        />
-        <h2>Hi.<br />My name is Jaice de Celis</h2>
-        <ol>
-          <li style="text-align: left">let things = [</li>
-          <li>"Writing simple and efficient code",</li>
-          <li>"Solving complex issues",</li>
-          <li></li>
-          <li>"Collaborating with like-minded people",</li>
-          <li>"Mixed Martial Arts"</li>
-          <li>"And"</li>
-          <li>"Making dreams into reality."</li>
-          <li style="text-align: left">];</li>
-        </ol>
-        <h3>
-          <span class="thinkful">return</span> ("I am a software developer from
-          <br /><span class="thinkful">New Jersey</span>, I enjoy:" +
-          things.join(', '))
-        </h3>
-      </section>
-      <hr class="container-break" />
-      <section id="services" class="services container shadow">
-        <h2>Services.</h2>
-        <ul>
-          <li>Responsive Web Design and Development</li>
-          <li>High Performance Code</li>
-          <li>Search Engine Optimization</li>
-          <li>HTML Email Creation</li>
-          <li>Rapid Design Prototyping</li>
-        </ul>
-      </section>
-      <hr class="container-break" />
-      <section id="about" class="about container shadow">
-        <h2>About Me.</h2>
-        <p>Previous sales professional transitioning into the tech space.</p>
-        <p>
-          I am pursuing additional education with
-          <span class="thinkful inset">Thinkful</span> and I am hoping to start
-          a lifelong career in Software.
-        </p>
-        <p>
-          My professional experience resides within the sales profession,
-          however, over the last 13 years I have used technology in almost every
-          aspect of my life. My initial curiosity has since developed into an
-          intense passion to design, develop and create impactful user facing
-          software.
-        </p>
-        <p>
-          I am always ready to work, <br /><a
-            class="inline-link"
-            href="#contact"
-            >Contact Me</a
-          >
-        </p>
-        <p class="stack-text">Current Tech</p>
-        <ul class="skillset">
-          <li class="inset"><i class="fab fa-html5"></i></li>
-          <li class="inset"><i class="fab fa-css3-alt"></i></li>
-          <li class="inset"><i class="fab fa-js-square"></i></li>
-          <li class="inset"><i class="fab fa-react"></i></li>
-          <li class="inset hideskill"><i class="fab fa-node"></i></li>
-          <li class="inset hideskill"><i class="fab fa-git"></i></li>
-          <li class="inset hidden"><i class="fab fa-figma"></i></li>
-        </ul>
-      </section>
-      <hr class="container-break" />
-      <section id="portfolio" class="portfolio-container shadow">
-        <h2>My Most Recent Work:</h2>
-        <div class="portfolio-row">
-          <div class="portfolio-column shadow">
-            <img
-              alt="Screenshot of Quiz Application Home Screen"
-              src="./portfolio-1.png"
-            />
-            <h2>MS Quiz App</h2>
-            <ul class="portfolio-stack">
-              <li>
-                <i class="fab fa-html5"></i>
-              </li>
-              <li>
-                <i class="fab fa-css3-alt"></i>
-              </li>
-              <li>
-                <i class="fab fa-js"></i>
-              </li>
-            </ul>
-            <p class="description">
-              Responsive web based quiz application to test user knowledge on
-              Merchant Services Industry. This project was created to increase
-              my working knowledge of jQuery
-            </p>
-            <button class="portfolio-button shadow">
-              <a
-                target="_blank"
-                style="text-decoration: none; color: black"
-                href="https://jaicedev.github.io/thinkful-final-quiz-app/"
-                >DEMO</a
-              >
-            </button>
-            <button class="portfolio-button shadow">
-              <a
-                target="_blank"
-                style="text-decoration: none; color: black"
-                href="https://github.com/jaicedev/thinkful-final-quiz-app"
-                >CODE</a
-              >
-            </button>
-          </div>
-          <div class="portfolio-column shadow">
-            <img alt="" src="portfolio-2.png" />
-            <h2>Fixed Loan Calculator</h2>
-            <ul class="portfolio-stack">
-              <li>
-                <i class="fab fa-html5"></i>
-              </li>
-              <li>
-                <i class="fab fa-css3-alt"></i>
-              </li>
-              <li>
-                <i class="fab fa-js"></i>
-              </li>
-            </ul>
-            <p class="description">
-              Responsive web application to estimate the price of taking out a
-              loan. The calculator was built with the assitance of jQuery and
-              <a class="thinkful" href="https://www.chartjs.org/">ChartJs</a>. I
-              designed this project as part of a design challenge that I
-              participated in.
-            </p>
-            <button class="portfolio-button shadow">
-              <a
-                target="_blank"
-                style="text-decoration: none; color: black"
-                href="https://jaicedev.github.io/loan-calculator-pure/"
-                >DEMO</a
-              >
-            </button>
-            <button class="portfolio-button shadow">
-              <a
-                target="_blank"
-                style="text-decoration: none; color: black"
-                href="https://github.com/jaicedev/loan-calculator-pure"
-                >CODE</a
-              >
-            </button>
-          </div>
-        </div>
-        <div class="portfolio-row">
-          <div class="portfolio-column shadow">
-            <img
-              alt=""
-              src="https://via.placeholder.com/480x270?text=Portfolio+Project"
-            />
-            <h2>Wheels CRM</h2>
-            <ul class="portfolio-stack">
-              <li>
-                <i class="fab fa-html5"></i>
-              </li>
-              <li>
-                <i class="fab fa-css3-alt"></i>
-              </li>
-              <li>
-                <i class="fab fa-node"></i>
-              </li>
-            </ul>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              tenetur sequi, quo quod dicta quis. Maiores autem, mollitia odio
-              eos corporis
-            </p>
-            <button class="portfolio-button shadow">DEMO</button>
-            <button class="portfolio-button shadow">CODE</button>
-          </div>
-          <div class="portfolio-column shadow">
-            <img
-              alt=""
-              src="https://via.placeholder.com/480x270?text=Portfolio+Project"
-            />
-            <h2>Easy Journal</h2>
-            <ul class="portfolio-stack">
-              <li>
-                <i class="fab fa-python"></i>
-              </li>
-            </ul>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              tenetur sequi, quo quod dicta quis. Maiores autem, mollitia odio
-              eos corporis
-            </p>
-            <button class="portfolio-button shadow">DEMO</button>
-            <button class="portfolio-button shadow">CODE</button>
-          </div>
-        </div>
-      </section>
-      <hr class="container-break" />
-      <section id="contact" class="contact container shadow">
-        <h2>Contact Me.</h2>
-        <form
-          action="https://formspree.io/xyynlqra"
-          method="POST"
-          class="contact-form"
-        >
-          <div class="form-row">
-            <label class="form-label" for="first-name">First Name:</label>
-            <input
-              required
-              id="first-name"
-              name="first-name"
-              type="text"
-              placeholder="First Name*"
-            />
-          </div>
-          <div class="form-row">
-            <label class="form-label" for="email">Email:</label>
-            <input
-              required
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Email Address*"
-            />
-          </div>
-          <div class="form-row">
-            <label class="form-label" for="message">Message:</label>
-            <textarea
-              placeholder="Hey Jaice..."
-              name="message"
-              id="message"
-            ></textarea>
-          </div>
-          <div class="form-row">
-            <button type="submit" class="portfolio-button">Submit</button>
-          </div>
-        </form>
-        <!-- Using Font Awesome for Icons -->
-        <ul>
-          <li>
-            <a
-              aria-label="LinkedIn"
-              target="_blank"
-              href="https://www.linkedin.com/in/jaicedecelis/"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              aria-label="GitHub"
-              target="_blank"
-              href="https://github.com/jaicedev"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              aria-label="Stack Overflow"
-              target="_blank"
-              href="https://stackoverflow.com/users/13916437/jaice-de-celis"
-              ><i class="fab fa-stack-overflow"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              aria-label="Quora"
-              target="_blank"
-              href="https://www.quora.com/profile/Jaice-de-Celis-3"
-              ><i class="fab fa-quora"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              aria-label="Email"
-              target="_blank"
-              href="mailto:jaicedev@gmail.com"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </li>
-        </ul>
-      </section>
-    </main>
+    <section id="services" class="services container shadow">
+      <h2>Services.</h2>
+      <ul>
+        <li>Responsive Web Design and Development</li>
+        <li>High Performance Code</li>
+        <li>Search Engine Optimization</li>
+        <li>HTML Email Creation</li>
+        <li>Rapid Design Prototyping</li>
+      </ul>
+    </section>
     <hr class="container-break" />
-    <footer class="container shadow">
-      <p class="footer-text">
-        <i class="fas fa-copyright"></i> Jaice de Celis 2020
+    <section id="about" class="about container shadow">
+      <h2>About Me.</h2>
+      <p>Previous sales professional transitioning into the tech space.</p>
+      <p>
+        I am pursuing additional education with
+        <span class="thinkful inset">Thinkful</span> and I am hoping to start
+        a lifelong career in Software.
       </p>
-    </footer>
-  </body>
+      <p>
+        My professional experience resides within the sales profession,
+        however, over the last 13 years I have used technology in almost every
+        aspect of my life. My initial curiosity has since developed into an
+        intense passion to design, develop and create impactful user facing
+        software.
+      </p>
+      <p>
+        I am always ready to work, <br /><a class="inline-link" href="#contact">Contact Me</a>
+      </p>
+      <p class="stack-text">Current Tech</p>
+      <ul class="skillset">
+        <li class="inset"><i class="fab fa-html5"></i></li>
+        <li class="inset"><i class="fab fa-css3-alt"></i></li>
+        <li class="inset"><i class="fab fa-js-square"></i></li>
+        <li class="inset"><i class="fab fa-react"></i></li>
+        <li class="inset hideskill"><i class="fab fa-node"></i></li>
+        <li class="inset hideskill"><i class="fab fa-git"></i></li>
+        <li class="inset hidden"><i class="fab fa-figma"></i></li>
+      </ul>
+    </section>
+    <hr class="container-break" />
+    <section id="portfolio" class="portfolio-container shadow">
+      <h2>My Most Recent Work:</h2>
+      <div class="portfolio-row">
+        <div class="portfolio-column shadow">
+          <img alt="Screenshot of Quiz Application Home Screen" src="./portfolio-1.png" />
+          <h2>MS Quiz App</h2>
+          <ul class="portfolio-stack">
+            <li>
+              <i class="fab fa-html5"></i>
+            </li>
+            <li>
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            <li>
+              <i class="fab fa-js"></i>
+            </li>
+          </ul>
+          <p class="description">
+            Responsive web based quiz application to test user knowledge on
+            Merchant Services Industry. This project was created to increase
+            my working knowledge of jQuery
+          </p>
+          <button class="portfolio-button shadow">
+            <a target="_blank" style="text-decoration: none; color: black"
+              href="https://jaicedev.github.io/thinkful-final-quiz-app/">DEMO</a>
+          </button>
+          <button class="portfolio-button shadow">
+            <a target="_blank" style="text-decoration: none; color: black"
+              href="https://github.com/jaicedev/thinkful-final-quiz-app">CODE</a>
+          </button>
+        </div>
+        <div class="portfolio-column shadow">
+          <img alt="" src="portfolio-2.png" />
+          <h2>Fixed Loan Calculator</h2>
+          <ul class="portfolio-stack">
+            <li>
+              <i class="fab fa-html5"></i>
+            </li>
+            <li>
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            <li>
+              <i class="fab fa-js"></i>
+            </li>
+          </ul>
+          <p class="description">
+            Responsive web application to estimate the price of taking out a
+            loan. The calculator was built with the assitance of jQuery and
+            <a class="thinkful" href="https://www.chartjs.org/">ChartJs</a>. I
+            designed this project as part of a design challenge that I
+            participated in.
+          </p>
+          <button class="portfolio-button shadow">
+            <a target="_blank" style="text-decoration: none; color: black"
+              href="https://jaicedev.github.io/loan-calculator-pure/">DEMO</a>
+          </button>
+          <button class="portfolio-button shadow">
+            <a target="_blank" style="text-decoration: none; color: black"
+              href="https://github.com/jaicedev/loan-calculator-pure">CODE</a>
+          </button>
+        </div>
+      </div>
+      <div class="portfolio-row">
+        <div class="portfolio-column shadow">
+          <img alt="" src="./portfolio-3.png" />
+          <h2>GridPic</h2>
+          <ul class="portfolio-stack">
+            <li>
+              <i class="fab fa-html5"></i>
+            </li>
+            <li>
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            <li>
+              <i class="fab fa-react"></i>
+            </li>
+          </ul>
+          <p class="description">
+            Dynamically Generate Photo Grids based on User Criteria. Uses styled components in order to create readable
+            and easy to consume code with local styling.
+          </p>
+          <button class="portfolio-button shadow"><a target="_blank" style="text-decoration: none; color: black"
+              href="https://jaicedev.github.io/photo-grid-design-challenge/">DEMO</a></button>
+          <button class="portfolio-button shadow"><a target="_blank" style="text-decoration: none; color: black"
+              href="https://github.com/jaicedev/photo-grid-design-challenge/">CODE</a></button>
+        </div>
+        <div class="portfolio-column shadow">
+          <img alt="" src="https://via.placeholder.com/480x270?text=Portfolio+Project" />
+          <h2>Easy Journal</h2>
+          <ul class="portfolio-stack">
+            <li>
+              <i class="fab fa-python"></i>
+            </li>
+          </ul>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            tenetur sequi, quo quod dicta quis. Maiores autem, mollitia odio
+            eos corporis
+          </p>
+          <button class="portfolio-button shadow">DEMO</button>
+          <button class="portfolio-button shadow">CODE</button>
+        </div>
+      </div>
+    </section>
+    <hr class="container-break" />
+    <section id="contact" class="contact container shadow">
+      <h2>Contact Me.</h2>
+      <form action="https://formspree.io/xyynlqra" method="POST" class="contact-form">
+        <div class="form-row">
+          <label class="form-label" for="first-name">First Name:</label>
+          <input required id="first-name" name="first-name" type="text" placeholder="First Name*" />
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="email">Email:</label>
+          <input required id="email" type="email" name="email" placeholder="Email Address*" />
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="message">Message:</label>
+          <textarea placeholder="Hey Jaice..." name="message" id="message"></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="portfolio-button">Submit</button>
+        </div>
+      </form>
+      <!-- Using Font Awesome for Icons -->
+      <ul>
+        <li>
+          <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/jaicedecelis/"><i
+              class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a aria-label="GitHub" target="_blank" href="https://github.com/jaicedev"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a aria-label="Stack Overflow" target="_blank"
+            href="https://stackoverflow.com/users/13916437/jaice-de-celis"><i class="fab fa-stack-overflow"></i></a>
+        </li>
+        <li>
+          <a aria-label="Quora" target="_blank" href="https://www.quora.com/profile/Jaice-de-Celis-3"><i
+              class="fab fa-quora"></i></a>
+        </li>
+        <li>
+          <a aria-label="Email" target="_blank" href="mailto:jaicedev@gmail.com"><i class="fas fa-envelope"></i></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <hr class="container-break" />
+  <footer class="container shadow">
+    <p class="footer-text">
+      <i class="fas fa-copyright"></i> Jaice de Celis 2020
+    </p>
+  </footer>
+</body>
+
 </html>
